@@ -1,0 +1,384 @@
+<!doctype html><html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Володимир — URBN · пропозиція</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{--ink:#01283B;--ink-2:#5c7182;--ink-3:#8a9aa8;--gold:#FFAF11;--gold-bg:#fdf3dd;
+--gold-line:#f0dcae;--gold-txt:#7a5c08;--line:#e6ecf0;--line-2:#d3dde3;--paper:#fff;--bg:#f4f7f8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0);padding-bottom:env(safe-area-inset-bottom,0)}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:740px;margin:0 auto;background:var(--paper)}
+.eyebrow{font:500 10.5px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.hero{background:var(--ink);color:#fff;padding:34px 22px 30px;position:relative;overflow:hidden}
+.hero.shot{padding-top:46px;padding-bottom:36px}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.hero .bg::after{content:"";position:absolute;inset:0;
+background:linear-gradient(180deg,rgba(1,40,59,.82) 0%,rgba(1,40,59,.68) 40%,rgba(1,40,59,.95) 100%)}
+.hero>*{position:relative;z-index:1}
+.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:230px;height:230px;background:var(--gold);opacity:.1;transform:rotate(45deg);z-index:0}
+.hero .logo{margin-bottom:26px}
+.hero .logo img{height:30px;display:block}
+.cmp{display:flex;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;
+overflow:hidden;margin-top:18px}
+.cmp div{background:#fff;padding:11px 13px;flex:1}
+.cmp .l{font:500 9.5px "IBM Plex Mono",monospace;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
+.cmp .v{font:600 15px "IBM Plex Mono",monospace}
+.prog{margin-top:18px}
+.prog .t{display:flex;justify-content:space-between;font:400 12px "IBM Plex Mono",monospace;color:var(--ink-2);margin-bottom:6px}
+.prog .bar{height:7px;border-radius:4px;background:var(--line);overflow:hidden}
+.prog .bar i{display:block;height:100%;background:var(--gold);border-radius:4px}
+.swipe{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+padding-bottom:4px;margin-top:16px}
+.swipe img{flex:0 0 86%;scroll-snap-align:center;border-radius:10px;border:1px solid var(--line);
+height:230px;object-fit:cover}
+.swipe::-webkit-scrollbar{height:4px}.swipe::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:3px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(1,40,59,.97);
+padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:none;gap:8px;
+box-shadow:0 -4px 18px rgba(0,0,0,.18)}
+.sticky a{flex:1;text-align:center;text-decoration:none;font:600 14px "IBM Plex Sans",sans-serif;
+padding:12px 10px;border-radius:9px;background:var(--gold);color:#3a2c00}
+.sticky a.gh{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);flex:0 0 46%}
+.lb{position:fixed;inset:0;background:rgba(1,40,59,.94);z-index:60;display:none;
+align-items:center;justify-content:center;padding:18px;cursor:zoom-out}
+.lb img{max-width:100%;max-height:92vh;object-fit:contain;border-radius:8px;background:#fff}
+.lb.on{display:flex}
+.hero h1{font-family:"IBM Plex Sans Condensed",sans-serif;font-size:31px;line-height:1.15;font-weight:700;margin:0 0 10px;position:relative}
+.hero p{margin:0;color:#b9cddb;font-size:15px;max-width:44ch;position:relative}
+.req{margin-top:20px;padding:13px 15px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06);
+font:400 14px "IBM Plex Mono",monospace;color:#dceaf3;position:relative;border-radius:0 7px 7px 0}
+.who{margin-top:22px;font-size:14px;color:#9fb8c8;position:relative}.who b{color:#fff;font-weight:600}
+.hold{margin-top:20px;padding:14px 16px;border:1px solid rgba(255,255,255,.22);border-radius:10px;font-size:14px;color:#dceaf3;position:relative;line-height:1.5}
+.hold b{color:var(--gold)}
+section{padding:34px 22px;border-bottom:1px solid var(--line)}
+h2{font-family:"IBM Plex Sans Condensed",sans-serif;text-transform:uppercase;font-size:23px;font-weight:700;margin:6px 0 4px}
+h3{font-family:"IBM Plex Sans Condensed",sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.07em;color:var(--ink-2);margin:26px 0 10px;font-weight:600}
+.lead{color:var(--ink-2);font-size:15.5px;margin:0 0 4px}
+.rule{height:3px;background:var(--gold);width:54px;margin:16px 0 18px}
+img.pic{width:100%;border-radius:10px;display:block;border:1px solid var(--line)}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.adv{list-style:none;padding:0;margin:0}
+.adv li{position:relative;padding-left:24px;margin-bottom:9px;font-size:15px}
+.adv li::before{content:"";position:absolute;left:3px;top:9px;width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:18px}
+.facts div{background:var(--paper);padding:13px 14px}
+.facts .l{font:500 9.5px "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+.facts .v{font:600 17px "IBM Plex Mono",monospace}
+.hook{background:var(--gold-bg);border:1px solid var(--gold-line);border-radius:12px;padding:16px 18px;margin-top:18px}
+.hook .l{font:500 10px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-txt);margin-bottom:7px}
+.hook p{margin:0;font-size:15.5px;line-height:1.55}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.plan{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper)}
+.plan .tag{background:var(--ink);color:#fff;padding:9px 14px;font:600 13px "IBM Plex Sans Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;display:flex;justify-content:space-between;align-items:baseline}
+.plan .tag span{font:400 11px "IBM Plex Mono",monospace;color:#9fb8c8}
+.plan img{width:100%;height:250px;object-fit:contain;background:#f8fbfc;display:block;border-bottom:1px solid var(--line)}
+.plan .body{padding:14px}
+.plan .desc{font-size:14px;color:var(--ink-2);line-height:1.55;margin:0 0 12px}
+.kv{width:100%;border-collapse:collapse;font-size:13.5px}
+.kv td{padding:6px 0;border-bottom:1px solid var(--line)}
+.kv td:last-child{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap;font-weight:500}
+.kv tr:last-child td{border-bottom:0}
+.kv tr.hi td{font-weight:600;font-size:15px;border-top:2px solid var(--ink);padding-top:9px}
+.save{background:var(--gold-bg);border:1px solid var(--gold-line);border-radius:8px;padding:9px 12px;margin-top:11px;font-size:13px;color:var(--gold-txt);display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.save b{font-family:"IBM Plex Mono",monospace;font-size:15px}
+.tune{margin-top:14px;padding:13px;border:1px solid var(--line);border-radius:10px;background:#f8fbfc}
+.tune .tl{font:500 9.5px "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:9px}
+.terms{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.terms.pcts{margin-top:-4px}
+.terms .pl{font:500 10px "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-right:2px}
+.terms button{font:500 12.5px "IBM Plex Mono",monospace;padding:6px 12px;border-radius:16px;
+border:1px solid var(--line-2);background:#fff;color:var(--ink-2);cursor:pointer}
+.terms button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.tune input[type=range]{width:100%;margin:0;accent-color:var(--gold);height:26px}
+.tune .th{font-size:12.5px;color:var(--ink-2);margin-top:4px;display:flex;justify-content:space-between;gap:8px}
+.tune .th b{font-family:"IBM Plex Mono",monospace;color:var(--ink);font-size:14px}
+.steps{counter-reset:s;margin:12px 0 0;padding:0;list-style:none}
+.steps li{counter-increment:s;position:relative;padding-left:34px;margin-bottom:12px;font-size:15px;line-height:1.5}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:23px;height:23px;border-radius:50%;
+background:var(--ink);color:#fff;font:600 12px "IBM Plex Mono",monospace;display:flex;align-items:center;justify-content:center}
+.note{background:#fff8e6;border:1px solid var(--gold-line);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:11px 14px;margin:16px 0;font-size:13px;color:var(--gold-txt);line-height:1.5}
+.sched{margin-top:16px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.sched summary{cursor:pointer;padding:12px 15px;background:#f6f9fa;font-weight:500;font-size:14px}
+.sched .in{padding:6px 15px 12px;column-count:2;column-gap:22px}
+.sched p{margin:0;font:400 12.5px "IBM Plex Mono",monospace;color:var(--ink-2);padding:3px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.more{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:22px;background:var(--paper)}
+.more>summary{cursor:pointer;padding:15px 18px;font:600 14px "IBM Plex Sans",sans-serif;
+background:#f6f9fa;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.more.hl{border-color:var(--gold-line)}
+.more.hl>summary{background:var(--gold-bg);color:var(--gold-txt);font-size:15px}
+.more.hl>summary:hover{background:#fbe9c4}
+.more>summary::-webkit-details-marker{display:none}
+.more>summary::after{content:"\25BC";font-size:11px;color:var(--ink-3);line-height:1;flex:none;
+transition:transform .2s;display:inline-block}
+.more[open]>summary::after{transform:rotate(180deg)}
+.more>summary span{font:400 12px "IBM Plex Mono",monospace;color:var(--ink-3)}
+.more.hl>summary::after{color:var(--gold-txt);font-size:12px}
+.more.hl>summary span{color:#a08030}
+.more.hl[open]>summary{background:#f6f9fa;color:var(--ink)}
+.more.hl[open]>summary::after{color:var(--ink-3)}
+.more .inner{padding:4px 18px 20px}
+.cta{background:var(--ink);color:#fff;padding:32px 22px}
+.cta h2{color:#fff;margin-top:0}.cta p{color:#b9cddb;font-size:15px;margin:0 0 14px;max-width:46ch}
+.btn{display:inline-block;background:var(--gold);color:#3a2c00;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:9px;font-size:15px;margin:4px 8px 4px 0}
+.btn.gh{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.maplink{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);
+border:1px solid var(--line-2);border-radius:10px;padding:13px 17px;font-weight:600;font-size:15px;background:#f8fbfc}
+.maplink span{font:400 12.5px "IBM Plex Mono",monospace;color:var(--ink-3)}
+.fine{padding:18px 22px 30px;font-size:11.5px;color:var(--ink-3);line-height:1.6;background:var(--bg)}
+@media(max-width:560px){.plans{grid-template-columns:1fr}.hero h1{font-size:26px}section{padding:28px 18px}
+.hero{padding:28px 18px 26px}.sched .in{column-count:1}
+.sticky{display:flex}.cta{padding-bottom:86px}.cmp{flex-wrap:wrap}.cmp div{min-width:40%}}</style></head><body><div class="wrap">
+<div class="hero shot"><div class="bg" style="background-image:url('https://iesekiil1991.github.io/vertical-content/urbn/renders/urbn-rend-01.jpg')"></div>
+  <div class="logo"><img src="data:image/png;base64,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" alt="VERTICAL"></div>
+  <h1>Володимир, доброго дня!</h1>
+  <p>Підібрав варіанти під те, про що ми говорили. Наявність актуальна на 06.10.26, ціни тримаються до 31.10.26.</p>
+  <div class="req">Запит: 3К · здача до 2028</div>
+  <div class="who">Єгор Савіцький · <b>менеджер з продажу, Vertical Development</b><br>Івано-Франківськ</div>
+  <div class="hold">Будь-яку з квартир нижче можу <b>затримати за вами на 2 дні</b> — безкоштовно, просто напишіть, яка сподобалась.</div>
+</div>
+<section>
+  <span class="eyebrow">ЖК URBN · здача I кв. 2028</span>
+  <h2>Квартири на вибір</h2>
+  <div class="rule"></div>
+  <div class="hook"><div class="l">Чому саме URBN</div><p>Rooftop-зона — експлуатовані дахи, доступні всім мешканцям. Власна lounge-зона з видом на місто і Карпати.</p></div>
+  
+  <div class="plans"><div class="plan" data-cfg='{"a":72.7,"b":985,"t":[{"m":12,"a":30},{"m":24,"a":60},{"m":27,"a":75}],"mp":20,"p":0.05,"oi":false,"na":false,"m":24,"f":30000}'>
+      <div class="tag">Варіант 1 <span>72,7 м²</span></div>
+      <img class="zoom" src="https://crm-cdn.com/uploads/building_table_images/60b7b685b0704869912eb082abc244d0.medium.jpg" alt="планування" style="cursor:zoom-in">
+      <div class="body">
+        <p class="desc">Велика кухня-вітальня на 28,77 м² вміщає і диван, і обідній стіл на шістьох, а з неї вихід на лоджію 4,95 м². Дві окремі спальні: 12,47 м² з місцем під робочий стіл і 9,45 м². При більшій спальні є гардеробна 3,55 м², тож шафи не займають кімнату.</p>
+        <table class="kv">
+          <tr><td>Площа</td><td>72,7 м²</td></tr>
+          
+          <tr><td>Вільні поверхи</td><td>4, 5, 6, 7, 8, 9</td></tr>
+          <tr><td>Ціна за м²</td><td data-k="avg">997 $</td></tr>
+          <tr><td>Перший внесок</td><td data-k="first">30 000 $</td></tr>
+          <tr><td>Щомісяця · <span data-k="mon">24</span></td><td data-k="monthly">1 770 $</td></tr>
+          <tr class="hi"><td data-k="totlbl">Разом</td><td data-k="total">72 482 $</td></tr>
+        </table>
+        
+        <div class="save" data-k="savebox"><span>Економія зі знижкою 5%</span><b data-k="save">− 1 672 $</b></div>
+        <div class="tune">
+          <div class="tl">Порахуйте під себе</div>
+          <div class="terms"><button type="button" data-m="12" aria-pressed="false">12 міс</button><button type="button" data-m="24" aria-pressed="true">24 міс</button><button type="button" data-m="27" aria-pressed="false">27 міс</button>
+            <button type="button" data-m="0" aria-pressed="false">100% одразу</button></div>
+          <div class="terms pcts">
+            <span class="pl">Перший внесок</span>
+            <button type="button" data-p="30">30%</button><button type="button" data-p="50">50%</button>
+            <button type="button" data-p="0">мінімальний</button></div>
+          <input type="range" data-k="sl">
+          <div class="th"><span>Перший внесок <b data-k="fl"></b></span><span data-k="hint"></span></div>
+        </div>
+      </div></div><div class="plan" data-cfg='{"a":71,"b":985,"t":[{"m":12,"a":30},{"m":24,"a":60},{"m":27,"a":75}],"mp":20,"p":0.05,"oi":false,"na":false,"m":24,"f":30000}'>
+      <div class="tag">Варіант 2 <span>71 м²</span></div>
+      <img class="zoom" src="https://crm-cdn.com/uploads/building_table_images/cc329d766d834bd68abaeba01b6ee6b8.medium.jpg" alt="планування" style="cursor:zoom-in">
+      <div class="body">
+        <p class="desc">Та сама схема, але вітальня 19,05 м² — на шість метрів більша, і це відчутно: тут поміщається повноцінна зона відпочинку й обідня група водночас, не конкуруючи за місце. Балкон 8,39 м² майже вдвічі більший, на всю ширину вітальні. Спальні 15,43 і 11,41 м² стоять поруч, вікна всіх трьох кімнат на один бік, тому в квартирі однакове світло протягом дня. Гардеробна 2,65 м² і ванна 5,35 м² такі самі</p>
+        <table class="kv">
+          <tr><td>Площа</td><td>71 м²</td></tr>
+          
+          <tr><td>Вільні поверхи</td><td>2, 9, 10</td></tr>
+          <tr><td>Ціна за м²</td><td data-k="avg">996 $</td></tr>
+          <tr><td>Перший внесок</td><td data-k="first">30 000 $</td></tr>
+          <tr><td>Щомісяця · <span data-k="mon">24</span></td><td data-k="monthly">1 697 $</td></tr>
+          <tr class="hi"><td data-k="totlbl">Разом</td><td data-k="total">70 716 $</td></tr>
+        </table>
+        
+        <div class="save" data-k="savebox"><span>Економія зі знижкою 5%</span><b data-k="save">− 1 704 $</b></div>
+        <div class="tune">
+          <div class="tl">Порахуйте під себе</div>
+          <div class="terms"><button type="button" data-m="12" aria-pressed="false">12 міс</button><button type="button" data-m="24" aria-pressed="true">24 міс</button><button type="button" data-m="27" aria-pressed="false">27 міс</button>
+            <button type="button" data-m="0" aria-pressed="false">100% одразу</button></div>
+          <div class="terms pcts">
+            <span class="pl">Перший внесок</span>
+            <button type="button" data-p="30">30%</button><button type="button" data-p="50">50%</button>
+            <button type="button" data-p="0">мінімальний</button></div>
+          <input type="range" data-k="sl">
+          <div class="th"><span>Перший внесок <b data-k="fl"></b></span><span data-k="hint"></span></div>
+        </div>
+      </div></div><div class="plan" data-cfg='{"a":78.3,"b":985,"t":[{"m":12,"a":30},{"m":24,"a":60},{"m":27,"a":75}],"mp":20,"p":0.05,"oi":false,"na":false,"m":24,"f":30000}'>
+      <div class="tag">Варіант 3 <span>78,3 м²</span></div>
+      <img class="zoom" src="https://crm-cdn.com/uploads/building_table_images/716c77b5b3bb4a2fbfd8b345a5fb3b87.medium.jpg" alt="планування" style="cursor:zoom-in">
+      <div class="body">
+        <p class="desc">Кухня-вітальня на 28,97 м² з вікнами на дві сторони, тож у ній багато світла. З неї вихід на балкон 8,27 м². Дві окремі спальні, 13,82 і 12,47 м², гардеробна 2,78 м² і просторий коридор 11,55 м²</p>
+        <table class="kv">
+          <tr><td>Площа</td><td>78,3 м²</td></tr>
+          
+          <tr><td>Вільні поверхи</td><td>2, 4, 5, 6, 7, 8, 9, 10</td></tr>
+          <tr><td>Ціна за м²</td><td data-k="avg">1 001 $</td></tr>
+          <tr><td>Перший внесок</td><td data-k="first">30 000 $</td></tr>
+          <tr><td>Щомісяця · <span data-k="mon">24</span></td><td data-k="monthly">2 016 $</td></tr>
+          <tr class="hi"><td data-k="totlbl">Разом</td><td data-k="total">78 378 $</td></tr>
+        </table>
+        
+        <div class="save" data-k="savebox"><span>Економія зі знижкою 5%</span><b data-k="save">− 1 644 $</b></div>
+        <div class="tune">
+          <div class="tl">Порахуйте під себе</div>
+          <div class="terms"><button type="button" data-m="12" aria-pressed="false">12 міс</button><button type="button" data-m="24" aria-pressed="true">24 міс</button><button type="button" data-m="27" aria-pressed="false">27 міс</button>
+            <button type="button" data-m="0" aria-pressed="false">100% одразу</button></div>
+          <div class="terms pcts">
+            <span class="pl">Перший внесок</span>
+            <button type="button" data-p="30">30%</button><button type="button" data-p="50">50%</button>
+            <button type="button" data-p="0">мінімальний</button></div>
+          <input type="range" data-k="sl">
+          <div class="th"><span>Перший внесок <b data-k="fl"></b></span><span data-k="hint"></span></div>
+        </div>
+      </div></div><div class="plan" data-cfg='{"a":74.5,"b":985,"t":[{"m":12,"a":30},{"m":24,"a":60},{"m":27,"a":75}],"mp":20,"p":0.05,"oi":false,"na":false,"m":24,"f":30000}'>
+      <div class="tag">Варіант 4 <span>74,5 м²</span></div>
+      <img class="zoom" src="https://crm-cdn.com/uploads/building_table_images/dc9c56c4ea5b4139ab4edf685ee26c04.medium.jpg" alt="планування" style="cursor:zoom-in">
+      <div class="body">
+        <p class="desc">Вітальня 14,52 м² разом із кухнею-нішею 6,44 м², а з неї вихід на балкон 9,95 м², на який також можна вийти зі спальні. Дві окремі спальні: простора 16,53 м² з робочим місцем і 12,38 м². Два санвузли, тож вранці ніхто нікого не чекає. Окрема гардеробна 2,70 м²</p>
+        <table class="kv">
+          <tr><td>Площа</td><td>74,5 м²</td></tr>
+          
+          <tr><td>Вільні поверхи</td><td>2, 9, 10</td></tr>
+          <tr><td>Ціна за м²</td><td data-k="avg">999 $</td></tr>
+          <tr><td>Перший внесок</td><td data-k="first">30 000 $</td></tr>
+          <tr><td>Щомісяця · <span data-k="mon">24</span></td><td data-k="monthly">1 851 $</td></tr>
+          <tr class="hi"><td data-k="totlbl">Разом</td><td data-k="total">74 426 $</td></tr>
+        </table>
+        
+        <div class="save" data-k="savebox"><span>Економія зі знижкою 5%</span><b data-k="save">− 1 639 $</b></div>
+        <div class="tune">
+          <div class="tl">Порахуйте під себе</div>
+          <div class="terms"><button type="button" data-m="12" aria-pressed="false">12 міс</button><button type="button" data-m="24" aria-pressed="true">24 міс</button><button type="button" data-m="27" aria-pressed="false">27 міс</button>
+            <button type="button" data-m="0" aria-pressed="false">100% одразу</button></div>
+          <div class="terms pcts">
+            <span class="pl">Перший внесок</span>
+            <button type="button" data-p="30">30%</button><button type="button" data-p="50">50%</button>
+            <button type="button" data-p="0">мінімальний</button></div>
+          <input type="range" data-k="sl">
+          <div class="th"><span>Перший внесок <b data-k="fl"></b></span><span data-k="hint"></span></div>
+        </div>
+      </div></div></div>
+  <div class="note"><b>Чим більший перший внесок, тим дешевша квартира.</b> При 100% оплаті цей варіант коштує 71 610 $ — на 872 $ менше. Скажіть свою суму, порахую точно під неї.</div>
+  
+  <details class="more hl"><summary>Більше про комплекс <span>натисніть, щоб розгорнути</span></summary><div class="inner"><p class="lead">URBN — це про вираження індивідуальності й постійний рух уперед. Комплекс у спокійному мікрорайоні: до центру близько 15 хвилин на авто, до міського озера та парку 15–20 хвилин пішки. За 2 хвилини супермаркети, за 3 — ТЦ, школи та приватні садочки поруч.</p>
+<div class="swipe"><img src="https://iesekiil1991.github.io/vertical-content/urbn/renders/urbn-rend-01.jpg" alt=""><img src="https://iesekiil1991.github.io/vertical-content/urbn/renders/urbn-rend-02.jpg" alt=""><img src="https://iesekiil1991.github.io/vertical-content/urbn/renders/urbn-rend-03.jpg" alt=""><img src="https://iesekiil1991.github.io/vertical-content/urbn/renders/urbn-rend-04.jpg" alt=""></div>
+<h3>Що важливо знати</h3><ul class="adv"><li>Внутрішній двір і дитячий майданчик повністю без автомобілів, доступ за електронними ключами</li><li>Окрема спортивна зона і велопаркінг</li><li>Підземний паркінг зі спринклерною системою пожежогасіння та імпульсним димовидаленням</li><li>Монолітний залізобетонний каркас, керамоблок 190 мм плюс 150 мм утеплення</li><li>Міжквартирна звукоізоляція 250 мм: газобетон з мінеральною ватою</li><li>Автономне опалення від дахової газової котельні</li><li>Швидкісні ліфти з функцією аварійної евакуації при відключенні світла</li></ul>
+<div class="facts">
+      <div><div class="l">Здача</div><div class="v">I кв. 2028</div></div>
+      <div><div class="l">Клас</div><div class="v">комфорт+</div></div>
+      <div><div class="l">Розтермінування</div><div class="v">до 27 міс</div></div>
+      <div><div class="l">Від</div><div class="v">985 $/м²</div></div></div>
+<h3>Хід будівництва · серпень 2026</h3>
+      <div class="gal"><img class="pic" src="https://iesekiil1991.github.io/vertical-content/urbn/build/urbn-bud-01.jpg" alt=""><img class="pic" src="https://iesekiil1991.github.io/vertical-content/urbn/build/urbn-bud-02.jpg" alt=""><img class="pic" src="https://iesekiil1991.github.io/vertical-content/urbn/build/urbn-bud-03.jpg" alt=""></div>
+<h3>Генплан житлового комплексу</h3><img class="pic" src="https://iesekiil1991.github.io/vertical-content/urbn/genplan /urbn-gen-01.jpg" alt="">
+<h3>План поверху · Будинок 4</h3><img class="pic" src="https://iesekiil1991.github.io/vertical-content/urbn/floors/b-04.jpg" alt=""><h3>План поверху · Будинок 3</h3><img class="pic" src="https://iesekiil1991.github.io/vertical-content/urbn/floors/b-03.jpg" alt=""><h3>План поверху · Будинок 7</h3><img class="pic" src="https://iesekiil1991.github.io/vertical-content/urbn/floors/b-07.jpg" alt="">
+<h3>Де це</h3><a class="maplink" href="https://maps.app.goo.gl/RRJJjdVDKdQRwhYx6" target="_blank" rel="noopener">Відкрити на карті <span>прокласти маршрут</span></a></div></details>
+</section>
+<div class="cta">
+  <h2>Подивимось разом</h2>
+      <p>На папері не видно головного: який вид з конкретного поверху, наскільки тихо у дворі, що вже реально збудовано. Показ займає 30–40 хвилин і ні до чого не зобовʼязує.</p>
+      <p>Якщо ви не у Франківську — зробимо онлайн: пройдуся майданчиком з камерою і покажу все, що вас цікавить.</p>
+      <p style="color:#fff">Напишіть, коли вам зручно — підлаштуюсь під будь-який день, включно з вихідними.</p>
+      <a class="btn" href="viber://chat?number=%2B380738766141">Обрати час у Viber</a>
+      <a class="btn gh" href="tel:+380738766141">Зателефонувати</a>
+</div>
+<div class="sticky">
+  <a class="gh" href="tel:+380738766141">Подзвонити</a>
+  <a href="viber://chat?number=%2B380738766141">Написати Єгор</a>
+</div>
+<div class="lb" id="lb"><img id="lbi" src="" alt=""></div>
+<div class="fine">Ціни вказані в доларах США, договір валютний. Оплата в гривні за курсом продажу АБ УКРГАЗБАНК на день платежу.
+Ціни дійсні до 31.10.26 включно. Наявність квартир актуальна на момент надсилання — уточнюйте перед бронюванням.
+Пропозиція не є публічною офертою. Єгор Савіцький · +380738766141</div>
+</div><script>
+(function(){
+ var R=function(x){return Math.round(x*100)/100},U=function(x){return Math.ceil(x-1e-9)};
+ var F=function(x){return Math.round(x).toLocaleString("uk-UA")+" $";};
+ function surch(t,m){ if(m<=0||!t.length) return 0;
+   var s=t.slice().sort(function(a,b){return a.m-b.m});
+   for(var i=0;i<s.length;i++) if(m<=s[i].m) return s[i].a;
+   return s[s.length-1].a; }
+ function chain(a,pD,pI,f){ var m2=R(f/pD),rest=R(a-m2); return R(U((f+R(rest*pI))/a)*a); }
+ function solve(a,pD,pI,k){ var f=k*a*pI/(1-k+k*pI/pD);
+   for(var i=0;i<8;i++) f=k*chain(a,pD,pI,f); return U(f); }
+ function firstForPct(c,m,pct,dp){
+   c={a:+c.a,b:+c.b,t:c.t,mp:+c.mp,p:+c.p,oi:c.oi,na:c.na};
+   var add=c.na?0:surch(c.t,m), pI=c.b+add;
+   if(c.oi&&dp>0) return U(R(pI*(1-dp))*c.a*pct/100);
+   var pD=Math.round(c.b*(1-dp));
+   return solve(c.a,pD,pI,pct/100);
+ }
+ function run(c,m,want,pct){
+   c={a:+c.a,b:+c.b,t:c.t,mp:+c.mp,p:+c.p,oi:c.oi,na:c.na};
+   var add=c.na?0:surch(c.t,m), pI=c.b+add;
+   if(c.oi&&pct>0){
+     var per=R(pI*(1-pct)), tot=R(per*c.a), mf=U(tot*c.mp/100);
+     if(m<=0) return {avg:per,total:tot,first:tot,monthly:0,minFirst:tot,max:tot};
+     var f0=Math.min(want>0?want:mf,tot);
+     return {avg:per,total:tot,first:f0,monthly:R((tot-f0)/m),minFirst:mf,max:tot};
+   }
+   var pD=Math.round(c.b*(1-pct)), cap=R(pD*c.a);
+   if(m<=0) return {avg:pD,total:cap,first:cap,monthly:0,minFirst:cap,max:cap};
+   var mf=solve(c.a,pD,pI,c.mp/100);
+   var f=Math.min(want>0?want:mf,cap);
+   if(f<mf) f=mf;
+   var m2=R(f/pD),rest=R(c.a-m2),avg=U((f+R(rest*pI))/c.a);
+   return {avg:avg,total:R(avg*c.a),first:f,monthly:R((R(avg*c.a)-f)/m),minFirst:mf,max:cap};
+ }
+ var lb=document.getElementById("lb"), lbi=document.getElementById("lbi");
+ if(lb){
+   document.querySelectorAll("img.zoom").forEach(function(im){
+     im.addEventListener("click",function(){ lbi.src=im.src; lb.classList.add("on"); });
+   });
+   lb.addEventListener("click",function(){ lb.classList.remove("on"); lbi.src=""; });
+   document.addEventListener("keydown",function(e){ if(e.key==="Escape") lb.classList.remove("on"); });
+ }
+ document.querySelectorAll(".plan[data-cfg]").forEach(function(card){
+  var c; try{ c=JSON.parse(card.getAttribute("data-cfg")); }catch(e){ return; }
+  var sl=card.querySelector("[data-k=sl]"); if(!sl) return;
+  var months=c.m, want=c.f;
+  var q=function(k){ return card.querySelector("[data-k="+k+"]"); };
+  function draw(){
+   var r=run(c,months,want,c.p);
+   var base=run(c,months,r.first,0);
+   if(q("avg")) q("avg").textContent=F(r.avg);
+   if(q("first")) q("first").textContent=F(r.first);
+   if(q("monthly")) q("monthly").textContent=months>0?F(r.monthly):"—";
+   if(q("mon")) q("mon").textContent=months>0?months:"—";
+   if(q("total")) q("total").textContent=F(r.total);
+   if(q("totlbl")) q("totlbl").textContent=months>0?"Разом":"Вартість";
+   var sv=R(base.total-r.total);
+   if(q("savebox")) q("savebox").style.display=sv>0.5?"":"none";
+   if(q("save")) q("save").textContent="− "+F(sv);
+   if(q("fl")) q("fl").textContent=F(r.first);
+   if(q("hint")) q("hint").textContent=months>0
+     ? (r.first>=r.max-1?"повна оплата":F(r.monthly)+" на місяць")
+     : "одразу, без розтермінування";
+   sl.min=Math.round(r.minFirst); sl.max=Math.round(r.max);
+   sl.step=Math.max(50,Math.round((r.max-r.minFirst)/200/50)*50);
+   sl.value=Math.round(r.first);
+   sl.disabled=months<=0;
+  }
+  sl.addEventListener("input",function(){ want=+sl.value; draw(); });
+  card.querySelectorAll(".terms button[data-m]").forEach(function(b){
+    b.addEventListener("click",function(){
+      months=+b.getAttribute("data-m"); want=0;
+      card.querySelectorAll(".terms button[data-m]").forEach(function(x){
+        x.setAttribute("aria-pressed", x===b?"true":"false"); });
+      card.querySelectorAll(".terms button[data-p]").forEach(function(x){
+        x.setAttribute("aria-pressed","false"); });
+      draw();
+    });
+  });
+  card.querySelectorAll(".terms button[data-p]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var pc=+b.getAttribute("data-p");
+      if(months<=0){
+        var mm=0; c.t.forEach(function(t){ if(t.m>mm) mm=t.m; });
+        months=mm;
+        card.querySelectorAll(".terms button[data-m]").forEach(function(x){
+          x.setAttribute("aria-pressed", +x.getAttribute("data-m")===mm?"true":"false"); });
+      }
+      want = pc>0 ? firstForPct(c,months,pc,c.p) : 0;
+      card.querySelectorAll(".terms button[data-p]").forEach(function(x){
+        x.setAttribute("aria-pressed", x===b?"true":"false"); });
+      draw();
+    });
+  });
+  draw();
+ });
+})();
+</script></body></html>
